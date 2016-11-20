@@ -3,9 +3,9 @@
  * from each provided sub-array.
  */
 
-function largestNumbersOfArrays(arr) {
-  const largest = (prev, next) => next > prev ? next : prev
-  return arr.map(subArray => subArray.reduce(largest))
+function largestNumbersOfArrays (arr) {
+  const largest = (a, b) => b > a ? b : a
+  return arr.map(subArr => subArr.reduce(largest))
 }
 
 largestNumbersOfArrays([
