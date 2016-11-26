@@ -9,7 +9,9 @@ function chunkArray (arr, size) {
   let total = arr.length
 
   while (pos < total) {
-    result.push(arr.slice(pos, pos += size))
+    result.push(
+      arr.slice(pos, pos += size)
+    )
   }
 
   return result
