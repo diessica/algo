@@ -3,7 +3,7 @@
  * Return an empty string if n is not a positive number.
  */
 
-function repeat(str, n) {
+function repeat (str, n) {
   let result = ''
 
   if (n < 0) return ''
