@@ -19,3 +19,6 @@ function rot13 (str) {
 
   return chars.join('')
 }
+
+rot13('SERR CVMMN') // => 'FREE PIZZA'
+rot13('FREE PIZZA') // => 'SERR CVMMN'
