@@ -3,7 +3,7 @@
  * and all numbers between them.
  */
 
-function sumRange(arr) {
+function sumRange (arr) {
   const max = Math.max(...arr)
   const min = Math.min(...arr)
   let sum = 0
