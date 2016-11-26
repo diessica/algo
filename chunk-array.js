@@ -17,4 +17,4 @@ function chunkArray (arr, size) {
   return result
 }
 
-chunkArray(["a", "b", "c", "d", "e", "f"], 2) // => [["a", "b"], ["c", "d"]]
+chunkArray(["a", "b", "c", "d", "e", "f"], 2) // => [["a", "b"], ["c", "d"], ["e", "f"]]
