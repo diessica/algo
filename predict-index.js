@@ -6,7 +6,10 @@
  */
 
 function predictIndex (arr, n) {
-  return arr.concat([n]).sort((a, b) => a > b).indexOf(n)
+  return arr
+    .concat([n])
+    .sort((a, b) => a > b)
+    .indexOf(n)
 }
 
 predictIndex([10, 20, 30, 40, 50], 35) // => 3
