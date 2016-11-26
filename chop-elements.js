@@ -1,9 +1,10 @@
 /*
- * Return the remaining elements of an array after chopping off n elements.
+ * Remove all elements from the initial array that are of the same
+ * value as these arguments.
  */
 
-function chopElements (arr, n) {
-  return arr.splice(n)
+function chopElements (arr, ...args) {
+  return arr.filter((item) => [...args].indexOf(item) === -1)
 }
 
-chopElements(["cars", "bananas", "pizza"], 2) // => ["pizza"]
+chopElements([1, 2, 3, 1, 2, 3], 2, 3) // => [1, 1]
